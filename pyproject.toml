@@ -1,0 +1,26 @@
+[project]
+name = "itmo-automl"
+version = "0.1.0"
+description = "Spooky Author Identification project"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "lightautoml",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "tensorboard",
+    "optuna",
+    "nltk",
+    "pyyaml",
+    "setuptools",
+    "transformers>=5.6.0",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "torchaudio>=2.11.0",
+    "datasets>=4.8.4",
+    "evaluate>=0.4.6",
+    "accelerate>=1.13.0",
+]

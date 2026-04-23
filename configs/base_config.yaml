@@ -1,0 +1,25 @@
+project_name: "spooky-author-identification"
+seed: 42
+
+paths:
+  train_data: "data/train.csv"
+  test_data: "data/test.csv"
+  sample_submission: "data/sample_submission.csv"
+  log_dir: "logs/"
+  output_dir: "output/"
+
+model_params:
+  lama:
+    timeout: 1200
+    cpu_limit: 4
+    n_folds: 5
+  custom:
+    n_folds: 5
+    early_stopping: 50
+
+eda:
+  top_n_words: 20
+  author_map:
+    EAP: "Edgar Allan Poe"
+    HPL: "HP Lovecraft"
+    MWS: "Mary Shelley"
